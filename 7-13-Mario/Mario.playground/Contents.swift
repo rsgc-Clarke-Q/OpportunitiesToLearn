@@ -11,3 +11,14 @@
  */
 
 // Add your code below
+func levelCost(heights: [Int], maxJump: Int) -> Int {
+    var energy = 0
+    var lastHeight = 0
+    
+    for i in heights {
+        
+    }
+}
+
+return energy
+}
