@@ -16,9 +16,18 @@ func levelCost(heights: [Int], maxJump: Int) -> Int {
     var lastHeight = 0
     
     for i in heights {
-        
+     lastHeight = heights[i+1]-heights[i]
+        if lastHeight <= maxJump{
+            if lastHeight == 0{
+            energy += 1
+            } else {
+                energy+=abs(lastHeight*2)
+            }
+        } else {
+            energy = -1
+            break
+        }
     }
-}
-
 return energy
 }
+
