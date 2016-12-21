@@ -10,8 +10,13 @@ let midPoint = CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0)
 var scene = SKScene(size: frame.size)
 
 let christmastree = SKSpriteNode(imageNamed: "8big_tree")
-christmastree.position = midPoint
-christmastree.setScale(0.2)
+christmastree.position = CGPoint(x: 160, y: 70)
+christmastree.setScale(0.23)
+
+let claus = SKSpriteNode(imageNamed: "santa-claus-03")
+claus.position = CGPoint(x: 160, y: 205)
+claus.setScale(0.19)
+scene.addChild(claus)
 
 let actionMoveUp = SKAction.moveBy(x: 20, y: 0, duration: 1)
 let actionMoveDown = SKAction.moveBy(x: -20, y: 0, duration: 1)
@@ -43,7 +48,6 @@ let actionPlaySound = SKAction.playSoundFileNamed("SLEIGH RIDE.mp3", waitForComp
 scene.run(actionPlaySound)
 //: And show the scene in the liveView
 
-
 let view = SKView(frame: frame)
 view.presentScene(scene)
 PlaygroundPage.current.liveView = view
@@ -51,7 +55,7 @@ PlaygroundPage.current.liveView = view
 let text = SKLabelNode(fontNamed: "Arial")
 text.text = "Merry Christmas"
 text.horizontalAlignmentMode = .center
-text.fontSize = 35
-text.position = CGPoint(x: 160, y: 10)
+text.fontSize = 27
+text.position = CGPoint(x: 160, y: 160)
 scene.addChild(text)
 //: All good, but it's just not there yet... [we should add a rainbow trail](@next)
