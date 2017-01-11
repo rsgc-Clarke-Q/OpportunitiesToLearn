@@ -44,8 +44,8 @@ emitter.particleAlpha = 0.5
 emitter.particleAlphaRange = 0.5
 scene.addChild(emitter)
 
-let actionPlaySound = SKAction.playSoundFileNamed("SLEIGH RIDE.mp3", waitForCompletion: false)
-scene.run(actionPlaySound)
+//let actionPlaySound = SKAction.playSoundFileNamed("SLEIGH RIDE.mp3", waitForCompletion: false)
+//scene.run(actionPlaySound)
 //: And show the scene in the liveView
 
 let view = SKView(frame: frame)
@@ -56,6 +56,6 @@ let text = SKLabelNode(fontNamed: "Arial")
 text.text = "Merry Christmas"
 text.horizontalAlignmentMode = .center
 text.fontSize = 27
-text.position = CGPoint(x: 160, y: 160)
+text.position = CGPoint(x: 160, y: 162)
 scene.addChild(text)
 //: All good, but it's just not there yet... [we should add a rainbow trail](@next)
